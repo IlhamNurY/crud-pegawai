@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <nav class="navbar navbar-light justify-content-between" style="background-color: #39ffd4;">
+    <a href="/" class="btn mb-2" style="background-color:#000000; color:#ecf1f5"><i class="fas fa-reply"></i> Kembali</a>
+  </nav>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  {% load static %}
+  <title>Detail Data Pegawai</title>
+  <link href="{% static 'fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+
+<body style="background-color:rgb(255, 233, 167)">
+  <br> </br>
+
+  <div class="container">
+      <div class="card shadow-sm mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold">Detail Data Pegawai</h6>
+        </div>
+        <div class="card-body">
+          <p>Nama Pegawai&nbsp; &nbsp;: {{lihatdatanya.nama}}<br>
+            NIP Pegawai&nbsp; &nbsp; &nbsp; : {{lihatdatanya.nip}}&nbsp;<br>
+            Divisi Pekerjaan : {{lihatdatanya.divisi}}<br>
+            Alamat Pegawai : {{lihatdatanya.alamat}}<br>
+            Jenis Kelamin&nbsp; &nbsp; : {{lihatdatanya.gender}}
+          </p>
+        </div>
+      </div>
+    <footer class="mt-5 mb-3">
+      <div class="container my-auto">
+        <div class="text-center my-auto">
+          <span>developed by <a href="https://github.com/ilhamnury" target="_blank" style="color: #000000;"><b>Ilham Nur</b><a></span>
+        </div>
+      </div>
+    </footer> 
+  </div>
+
+  <script src="{% static 'jquery/jquery.slim.min.js' %}"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
